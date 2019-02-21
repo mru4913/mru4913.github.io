@@ -12,7 +12,7 @@
       });
     });
   
-  
+
     $(document).ready(function(){
   
       //active menu
@@ -88,74 +88,74 @@
       inits();
   
   
-      //typed js
+      //typed js 
       $(".typed").typed({
-          strings: ["My Name is Albert.Yu", "I' m a lazy man", "Welcome to my adventure!"],
-          typeSpeed: 120,
-          backDelay: 900,
-          // loop
-          loop: true
+          strings: ["Electrical Engineer", "Data Scientist", "Lifelong Student"],
+          typeSpeed: 50,
+          backDelay: 400,
+          loop: true,  // loop
+          smartBackspace: true,
       });
   
       //owl carousel
-      $('.owl-carousel').owlCarousel({
-        autoPlay: 3000, //Set AutoPlay to 3 seconds
+    //   $('.owl-carousel').owlCarousel({
+    //     autoPlay: 3000, //Set AutoPlay to 3 seconds
   
-        items : 1,
-        itemsDesktop : [1199,1],
-        itemsDesktopSmall : [979,1],
-        itemsTablet : [768,1],
-        itemsMobile : [479,1],
+    //     items : 1,
+    //     itemsDesktop : [1199,1],
+    //     itemsDesktopSmall : [979,1],
+    //     itemsTablet : [768,1],
+    //     itemsMobile : [479,1],
   
-        // CSS Styles
-        baseClass : "owl-carousel",
-        theme : "owl-theme"
-      });
+    //     // CSS Styles
+    //     baseClass : "owl-carousel",
+    //     theme : "owl-theme"
+    //   });
   
-      $('.owl-carousel2').owlCarousel({
-        autoPlay: 3000, //Set AutoPlay to 3 seconds
+    //   $('.owl-carousel2').owlCarousel({
+    //     autoPlay: 3000, //Set AutoPlay to 3 seconds
   
-        items : 1,
-        itemsDesktop : [1199,1],
-        itemsDesktopSmall : [979,1],
-        itemsTablet : [768,1],
-        itemsMobile : [479,1],
-        autoPlay : false,
+    //     items : 1,
+    //     itemsDesktop : [1199,1],
+    //     itemsDesktopSmall : [979,1],
+    //     itemsTablet : [768,1],
+    //     itemsMobile : [479,1],
+    //     autoPlay : false,
   
-        // CSS Styles
-        baseClass : "owl-carousel",
-        theme : "owl-theme"
-      });
+    //     // CSS Styles
+    //     baseClass : "owl-carousel",
+    //     theme : "owl-theme"
+    //   });
   
       //contact
-      $('input').blur(function() {
+    //   $('input').blur(function() {
   
-        // check if the input has any value (if we've typed into it)
-        if ($(this).val())
-          $(this).addClass('used');
-        else
-          $(this).removeClass('used');
-      });
+    //     // check if the input has any value (if we've typed into it)
+    //     if ($(this).val())
+    //       $(this).addClass('used');
+    //     else
+    //       $(this).removeClass('used');
+    //   });
   
       //pop up porfolio
-      $('.portfolio-image li a').magnificPopup({
-        type: 'image',
-        gallery: {
-          enabled: true
-        }
-        // other options
-      });
+    //   $('.portfolio-image li a').magnificPopup({
+    //     type: 'image',
+    //     gallery: {
+    //       enabled: true
+    //     }
+    //     // other options
+    //   });
   
       //Skill
-      jQuery('.skillbar').each(function() {
-        jQuery(this).appear(function() {
-          jQuery(this).find('.count-bar').animate({
-            width:jQuery(this).attr('data-percent')
-          },3000);
-          var percent = jQuery(this).attr('data-percent');
-          jQuery(this).find('.count').html('<span>' + percent + '</span>');
-        });
-      });
+    //   jQuery('.skillbar').each(function() {
+    //     jQuery(this).appear(function() {
+    //       jQuery(this).find('.count-bar').animate({
+    //         width:jQuery(this).attr('data-percent')
+    //       },3000);
+    //       var percent = jQuery(this).attr('data-percent');
+    //       jQuery(this).find('.count').html('<span>' + percent + '</span>');
+    //     });
+    //   });
   
   
     });
