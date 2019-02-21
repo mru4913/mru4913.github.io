@@ -452,7 +452,7 @@ Main content
 .wrap-about .w-content{
     position: absolute;
     left: 44%;
-    top: 50%;
+    top: 70%;
     transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -464,12 +464,8 @@ Main content
     letter-spacing: 0.3px;
     font-weight: 300;
 }
-.wrap-about .name {
-    margin: 40px 0 25px 300px;
-    font-size: 15px;
-}
 .wrap-about .w-content td{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
 }
 .wrap-about .w-content td.title{
