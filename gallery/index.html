@@ -24,7 +24,7 @@
   <link href="../css/responsive.css" rel="stylesheet">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/gallery.css" rel="stylesheet">
-
+  <link href="../css/magnific.css" rel="stylesheet">
 
   <!-- JS -->
   <script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -34,6 +34,8 @@
   <script src="../js/smooth-scroll.min.js" type="text/javascript"></script>
   <script src="../js/typed.js" type="text/javascript"></script>
   <script src="../js/main.js" type="text/javascript"></script>
+  <script src="../js/instafeed.min.js" type="text/javascript"></script>
+  <script src="../js/magnific.min.js"></script>
   <!-- END JS -->
 
   <!-- fonts google -->
@@ -103,6 +105,14 @@
             </div>
         </section>
 
+        <div class="container">
+            <div id="instafeed" class="row gallery"></div>
+        </div>
+
+        <div class="button-wrapper">
+            <button id="button" class="button">Load More</button>
+        </div>
+
         <!-- FOOTER -->
         <footer>
             <div class="socialbtns">
@@ -120,5 +130,40 @@
           </footer>
           <!-- FOOTER END -->
     
+          <script>
+              $(document).ready(function() {
+                  var button = document.getElementById("button");
+                  var userFeed = new Instafeed({
+                      get: 'user',
+                      userId: '6747411500',
+                      limit: 4,
+                      resolution: 'standard_resolution',
+                      accessToken: '6747411500.1677ed0.cf8a22a479db4d43ad0afcd01d68c4e8',
+                      sortBy: 'most-recent',
+                      template: '<div class="col-lg-3 instaimg">\
+                                      <a href="{{image}}" title="{{caption}}" target="_blank">\
+                                        <img src="{{image}}" alt="{{caption}}" class="img-fluid"/>\
+                                      </a>\
+                                </div>',
+                  });
+
+                  userFeed.run();
+
+                  // This will create a single gallery from all elements that have class "gallery-item"
+                  $('.gallery').magnificPopup({
+                      type: 'image',
+                      delegate: 'a',
+                      gallery: {
+                          enabled: true
+                      }
+                  });
+                  
+                  // This add more images
+                  button.addEventListener("click", function() {
+                    userFeed.next();
+                  });
+
+                  });
+          </script>
 </body>
 </html>

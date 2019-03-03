@@ -5,11 +5,11 @@
       $("#status").fadeOut(); // will first fade out the loading animation
       $("#preloader").delay(450).fadeOut("slow"); // will fade out the white DIV that covers the website.
   
-      //masonry
-      $('.grid').masonry({
-        itemSelector: '.grid-item'
+      // //masonry
+      // $('.grid').masonry({
+      //   itemSelector: '.grid-item'
   
-      });
+      // });
     });
   
 
@@ -67,12 +67,13 @@
         }
   
         // close the menu element if the target it´s not the menu element or one of its descendants..
-        content.addEventListener( 'click', function(ev) {
+        if(content){
+          content.addEventListener( 'click', function(ev) {
           var target = ev.target;
           if( isOpen && target !== openbtn ) {
             toggleMenu();
           }
-        } );
+        })};
       }
   
       function toggleMenu() {
