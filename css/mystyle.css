@@ -583,8 +583,11 @@ textarea {
 /* -----------------------------------------------------------
 footer
 -------------------------------------------------------------*/
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
+footer {
+    text-align:center;
+}
 .socialbtns a, a:hover {
     text-decoration: none;
 }
@@ -612,4 +615,7 @@ footer
 	color: #FFF;
 	background-color: #000;
 	border: 1px solid #000;
+}
+.copyright {
+    text-align: center;
 }
