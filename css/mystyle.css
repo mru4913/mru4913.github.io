@@ -1,4 +1,3 @@
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 /* -----------------------------------------------------------
 TABLE OF CONTENTS:
 --------------------------------------------------------------
@@ -587,7 +586,7 @@ footer
 footer {
     text-align: center;
 }
-.socialbtns a, a:hover {
+.socialbtns a, .socialbtns a:hover {
     text-decoration: none;
 }
 .socialbtns, .socialbtns ul, .socialbtns li {
@@ -599,12 +598,13 @@ footer {
     display: inline-block;
 }
 .socialbtns .fa {
+    text-align: center;
 	width: 40px;
     height: 28px;
 	color: #000;
 	background-color: #FFF;
 	border: 1px solid #000;
-	padding-top: 12px;
+	padding-top: 7px;
 	border-radius: 22px;
 	-moz-border-radius: 22px;
 	-webkit-border-radius: 22px;
