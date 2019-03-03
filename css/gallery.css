@@ -35,10 +35,11 @@
 }
 .button-wrapper {
     text-align: center;
+    padding-bottom: 70px;
+    padding-top: 30px;
 }
 .button {
     position: relative;
-    top: 100%;
     outline:none;
     height: 40px;
     text-align: center;
