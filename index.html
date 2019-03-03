@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Setting the viewport to make your website look good on all devices:-->
     <!-- End metadata -->
 
-	<title> MR.U </title>
+	<title> MENGDA YU | ALBERT YU</title>
 
 	<!-- Fav -->
     <link href="favicon.ico" rel="shortcut icon">
@@ -107,6 +107,15 @@
                           <br>
                           <span class="typed"></span>
                         </div>
+                        <!-- scroll down icon -->
+                        <div class = "mouse-icon margin-20">
+                            <div class = "scroll">
+                              <a data-scroll="" href="#about">
+                                  <img class = "center-block"  src = "images/scroll-down.gif" 
+                                  height = "70" width = "70">
+                              </a>
+                            </div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -122,20 +131,19 @@
                 <!-- ABOUT CONTENT -->
                 <div class="col-md-6 col-sm-12 col-xs-12 white-col">
                     <div class="row">
+                      <div class = "col-md-12">
                         <div class="wrap-about">
                             <div class="w-content">
                                 <h2>ABOUT ME</h2>
                                 <p class="head-about">
-                                    Hi! I'm Mengda (or Albert), currently studying in master of Data Science at UBC. I graduated
-                                    from UBC with a bachelor of electrical engineering in 2018. During my undergraduate 
-                                    life, I realised there is an increasing demand for new techniques to effectively 
-                                    transfer vast amount of data into valuable and meaningful information. 
-                                    This has motivated me to study a little more and to pursue a higher degree.
-                                    My current interest lies in applying machine learning/Deep learning to make better
-                                    decisions.
+                                    Hi! I'm Mengda (Albert), currently studying in master of Data Science at UBC. 
+                                    I graduated from UBC with a bachelor of electrical engineering in 2018. 
+                                    During my undergraduate life, I realised there is an increasing demand for 
+                                    new techniques to effectively transfer vast amount of data into valuable and 
+                                    meaningful information. This has motivated me to study a little more every day 
+                                    and to pursue a higher degree. My current interest lies in applying machine learning/Deep learning 
+                                    to make better decisions.
                                 </p>
-                                <br>
-
                                 <h2>INDEX</h2>
                                 <table>
                                     <tr>
@@ -161,16 +169,58 @@
                                 </table>
                             </div>
                         </div>
+                      </div>
                     </div>
                 </div>
-
             </section>
             <!-- ABOUT END -->
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h2 class="title-small">
+                        <span>Contact</span>
+                      </h2>
+                      <p class="content-detail">
+                        Feel free to send me a message or contact me If you have something interesting to tell me.
+                      </p>
+
+                      <form method="POST" action="https://formspree.io/albertlife4913@gmail.com"
+                       action = "#", role="form">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" 
+                            placeholder="Your name" tabindex="1" required>
+                        </div>                            
+                        <div class="form-group">
+                            <label class="form-label" for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" 
+                            placeholder="Your Email" tabindex="2" required>
+                        </div>                                                 
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea rows="5" cols="50" name="message" class="form-control" id="message"
+                            placeholder="Message..." tabindex="4" required></textarea>                                 
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-start-order">Send Message</button>
+                        </div>
+                      </form>
+                   </div>
+              </div>
+            </div>  
+          </section>
+          <!-- CONTACT END -->
+
 
         </div>
         <!-- CONTENT END -->
      </div> 
      <!-- CONTENT-WRAP END -->
-    
+
+
+
 </body>
 </html>
