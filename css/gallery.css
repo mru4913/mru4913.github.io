@@ -27,7 +27,9 @@
 #instafeed {
     padding-top: 5vh;
 }
-.instaimg img {margin-bottom:30px;}
+.instaimg img {
+    margin-bottom:30px;
+}
 .instaimg img:hover {
 	opacity: 0.8;
 	-moz-opacity: 0.8;
