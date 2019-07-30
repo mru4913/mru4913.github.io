@@ -74,8 +74,11 @@ img { max-width: 100%; }
     padding: 120px 0;
     display: block;
 }
-
-
+.grey-bg {
+    background: #f6f6f6;
+    padding: 120px 0;
+    display: block;
+}
 /* -----------------------------------------------------------
 Typography 
 -------------------------------------------------------------*/
@@ -84,6 +87,7 @@ h2,
 h3,
 h4,
 h5 {
+  padding-top: 2px;
   letter-spacing: 0.8px;
   font-family: 'Roboto Slab', serif;
 }
@@ -440,10 +444,9 @@ Main content
 -------------------------------------------------------------*/
 /*----- ABOUT ---*/
 #about{
-    min-height: 660px;
+    min-height: 650px;
     display: inline-block;
     width: 100%;
-    overflow: auto;
 }
 .bg-about {
     background: url('../images/Al.jpg');
@@ -456,7 +459,7 @@ Main content
     padding: 0;
     margin: 0;
     min-height: 660px;
-    width: 100%;
+    width: 95%;
     height: 100%;
     float: left;
 }
@@ -580,6 +583,30 @@ textarea {
 	color: #706e6e;
 }
 
+/* -----------------------------------------------------------
+a little more about me 
+-------------------------------------------------------------*/
+.icon-use {
+    font-family: 'Glyphter';
+    font-size: 30px;
+    line-height: 20px;
+    color: #818181;
+    margin: 0;
+}
+.head-sm {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.text-grey {
+    color: #434343;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
 /* -----------------------------------------------------------
 Footer
 -------------------------------------------------------------*/

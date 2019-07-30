@@ -89,9 +89,9 @@
   
       //typed js 
       $(".typed").typed({
-          strings: ["Electrical Engineer", "Data Scientist", "Lifelong Student"],
-          typeSpeed: 50,
-          backDelay: 400,
+          strings: ["Mengda", "Electrical Engineer", "Data Scientist", "Lifelong Student"],
+          typeSpeed: 60,
+          backDelay: 300,
           loop: true,  // loop
           smartBackspace: true,
       });
@@ -199,18 +199,6 @@
       } 
 
     // footer 
-
-    // <div class="socialbtns">
-    //               <ul>
-    //               <li><a href="#" class="fa fa-lg fa-facebook"></a></li>
-    //               <li><a href="#" class="fa fa-lg fa-github"></a></li>
-    //               <li><a href="#" class="fa fa-lg fa-linkedin"></a></li>
-    //               <li><a href="#" class="fa fa-lg fa-instagram"></a></li>
-    //               <li><a href="#" class="fa fa-lg fa-youtube"></a></li>
-    //               </ul>
-    //           </div>
-    //           <div class="copyright">
-    //               <p>&copy 201
     var footer = '';
     var d = new Date();
     footer += '<div class="socialbtns"><ul>';
@@ -223,7 +211,7 @@
       footer += '<div class="copyright"><p>&copy 2019 - ' + d.getFullYear() + ' Mengda Yu</p></div>';
     }
     else {
-      footer += '<div class="copyright"><p>&copy2019 Mengda Yu</p></div>';
+      footer += '<div class="copyright"><p>&copy 2019 Mengda Yu</p></div>';
     }
     $('footer').append(footer);
 
