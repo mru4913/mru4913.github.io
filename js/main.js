@@ -37,7 +37,6 @@
         });
       });
   
-  
       //scroll js
       smoothScroll.init({
         selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
@@ -87,7 +86,6 @@
       }
   
       inits();
-  
   
       //typed js 
       $(".typed").typed({
@@ -199,8 +197,36 @@
               
           });
       } 
-  
-  
+
+    // footer 
+
+    // <div class="socialbtns">
+    //               <ul>
+    //               <li><a href="#" class="fa fa-lg fa-facebook"></a></li>
+    //               <li><a href="#" class="fa fa-lg fa-github"></a></li>
+    //               <li><a href="#" class="fa fa-lg fa-linkedin"></a></li>
+    //               <li><a href="#" class="fa fa-lg fa-instagram"></a></li>
+    //               <li><a href="#" class="fa fa-lg fa-youtube"></a></li>
+    //               </ul>
+    //           </div>
+    //           <div class="copyright">
+    //               <p>&copy 201
+    var footer = '';
+    var d = new Date();
+    footer += '<div class="socialbtns"><ul>';
+    footer += '<li><a href="https://github.com/mru4913" class="fa fa-lg fa-github"></a></li>';
+    footer += '<li><a href="#" class="fa fa-lg fa-linkedin"></a></li>';
+    footer += '<li><a href="https://www.instagram.com/mr_u4913/?hl=en" class="fa fa-lg fa-instagram"></a></li>';
+    footer += '<li><a href="#" class="fa fa-lg fa-youtube"></a></li>';
+    footer += '</ul></div>';
+    if (d.getFullYear() > 2019) {
+      footer += '<div class="copyright"><p>&copy 2019 - ' + d.getFullYear() + ' Mengda Yu</p></div>';
+    }
+    else {
+      footer += '<div class="copyright"><p>&copy2019 Mengda Yu</p></div>';
+    }
+    $('footer').append(footer);
+
     });
   
     //smooth
@@ -243,8 +269,6 @@
         }
       });
     }
-  
-  
   
   })(jQuery);
   
