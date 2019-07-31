@@ -232,7 +232,7 @@
       }, { duration: 200, queue: false }).find(".details").slideUp(200);
       $(".current").find(".details").slideDown(200);
     });
-    
+
     });
   
     //smooth
@@ -240,7 +240,7 @@
       $('html, body').animate({
           scrollTop: $('#complate').offset().top
       }, 1000);
-  });
+   });
   
     //header
     function inits() {
