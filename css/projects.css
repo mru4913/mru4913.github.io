@@ -39,6 +39,10 @@ html {
     display: block;
     margin: 5px 0 10px;
 }
+.projects .project-label {
+  display: block;
+  margin: 5px 0 10px;
+}
 .projects .current a{
     color: #000;
  }
