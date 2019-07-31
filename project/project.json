@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "name": "2-Axis Motorized Laser Controller",
+            "dates": {
+                "start": "Janurary 2018",
+                "end": "April 2018"
+            },
+            "type": "elec",
+            "description": "",
+            "details": "",
+            "Role": ["Creator"],
+            "links": {
+                "Blog 1": "https://www.muchen.ca/blog/elec/motor_control_part1/"
+            },
+            "thumbnail": ""
+        }
+    ]
+}

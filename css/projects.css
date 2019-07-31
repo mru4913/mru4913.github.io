@@ -1,0 +1,110 @@
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+}
+.project-container {
+  max-width: 980px;
+  margin: auto; 
+  padding: percentage(22px/980px);
+}
+.projects {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+.projects li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 45px percentage(22px/980px) 0 percentage(23px/980px); 
+    /* margin: auto; */
+    width: percentage(200px/980px);
+    /* padding: 1%; */
+    padding: 20px;
+}
+.projects a {
+    text-decoration: none;
+    color: #888;
+    display: block;
+    font-size: 16px;
+}
+.projects a img {
+    display: block;
+    max-width: 100%;
+    height: auto !important; 
+}
+.projects .project-label {
+    display: block;
+    margin: 5px 0 10px;
+}
+.projects .current a{
+    color: #000;
+ }
+.projects .current a::after {
+  content: "";
+  display: table;
+  border: 10px solid;
+  border-top: none;
+  border-color: #333 transparent;
+  margin: auto;
+}
+.projects h3 {
+  font-size: 16px;
+}
+.projects .details {
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  background: #444;
+  box-shadow: inset 0 10px 20px 5px #333;
+  color: #ddd;
+  overflow: hidden;
+  right: 20px;
+  left: 20px; 
+  padding: 20px;
+  padding-left: 20px;
+}
+.projects .details img {
+  float: right;
+  margin-left: 20px;
+  width: percentage(500px/940px);
+  height: auto !important;
+}
+.projects .details .text {
+  overflow: hidden;
+}
+/* .projects .details .current .details {
+  display: block;
+}  */
+@media only screen and (max-width: 735px) {
+  .project-container {
+    padding: percentage(22px/735px);
+  }
+  .projects {
+    margin: 0 -1*percentage(22px/735px); 
+  }
+  .projects li {
+    margin: 45px percentage(22px/735px) 0 percentage(23px/735px); 
+    width: percentage(200px/735px);
+  }
+}
+@media only screen and (max-width: 490px) {
+  .project-container {
+    padding: percentage(22px/490px);
+  }
+  .projects {
+    margin: 0 -1*percentage(22px/490px); 
+   
+  }
+  .projects li {
+    margin: 45px percentage(22px/490px) 0 percentage(23px/490px); 
+    width: percentage(200px/490px); 
+  }
+  .projects .details img{
+      float: none;
+      width: 100%;
+      margin: 0;
+    }
+}

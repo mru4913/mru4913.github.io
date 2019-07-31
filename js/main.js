@@ -202,6 +202,7 @@
     var footer = '';
     var d = new Date();
     footer += '<div class="socialbtns"><ul>';
+    footer += '<li><a href="http://mru4913.blog.github.io" class="fa fa-lg fa-bold"></a></li>';
     footer += '<li><a href="https://github.com/mru4913" class="fa fa-lg fa-github"></a></li>';
     footer += '<li><a href="#" class="fa fa-lg fa-linkedin"></a></li>';
     footer += '<li><a href="https://www.instagram.com/mr_u4913/?hl=en" class="fa fa-lg fa-instagram"></a></li>';
@@ -215,6 +216,23 @@
     }
     $('footer').append(footer);
 
+    //projects 
+    $(".projects>li>a").on("click", function(e){
+      e.preventDefault();
+      var li=$(this).parent(),
+          li_height = li.height(),
+          details=li.find(".details"), 
+          details_height=details.height(),
+          new_height=details_height+40; 
+      li.toggleClass("current").animate({
+        paddingBottom: new_height
+      }, { duration: 200, queue: false }).siblings().removeClass("current");
+      $(".projects li:not(.current)").animate({
+        paddingBottom: '0'
+      }, { duration: 200, queue: false }).find(".details").slideUp(200);
+      $(".current").find(".details").slideDown(200);
+    });
+    
     });
   
     //smooth
