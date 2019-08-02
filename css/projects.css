@@ -65,13 +65,12 @@ html {
 
     border-radius: 5%;
 }
-.projects .project-label {
-    display: block;
-    margin: 5px 0 10px;
-}
-.projects .project-label {
+.projects a .project-label {
   display: block;
   margin: 5px 0 10px;
+  word-wrap: break-word;
+  width: 11.5em;
+  font-weight: bolder;
 }
 .projects .current a{
     color: #000;
@@ -85,7 +84,7 @@ html {
   margin: auto;
 }
 .projects h3 {
-  font-size: 16px;
+  font-size: 20px;
 }
 .projects .details {
   font-size: 16px;
@@ -93,12 +92,12 @@ html {
   position: absolute;
   background: #444;
   box-shadow: inset 0 10px 20px 5px #333;
-  color: #ddd;
+  color: #fff;
   overflow: hidden;
   right: 20px;
   left: 20px; 
   padding: 20px;
-  padding-left: 20px;
+  margin-right: 20px;
 }
 .projects .details img {
   float: right;
@@ -108,6 +107,37 @@ html {
 }
 .projects .details .text {
   overflow: hidden;
+}
+.projects .details p {
+  overflow: hidden;
+  line-height: 1.5;
+  font: 14px 'Roboto', sans-serif;
+  padding-top: 20px;
+}
+.btn-more {
+  position: absolute;
+  bottom: 1em;
+}
+.tag-line {
+  word-wrap: break-word;
+  width: 200px;
+  margin-top: 3px;
+}
+.tag-line .current{
+  display: none;
+}
+.tag-line .project-tag{
+  display: inline-block;
+  font: 10px 'Roboto', sans-serif;
+  border: 1px #888 solid;
+  line-height: 1;
+  border-radius: 8px;
+  padding: 3px;
+  margin: 1px;
+}
+.project-tag:hover {
+  color: #000;
+  text-decoration: underline;
 }
 /* .projects .details .current .details {
   display: block;

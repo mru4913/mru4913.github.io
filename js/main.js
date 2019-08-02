@@ -226,11 +226,14 @@
           new_height=details_height+40; 
       li.toggleClass("current").animate({
         paddingBottom: new_height
-      }, { duration: 200, queue: false }).siblings().removeClass("current");
+      }, { duration: 300, queue: false }).siblings().removeClass("current");
       $(".projects li:not(.current)").animate({
         paddingBottom: '0'
-      }, { duration: 200, queue: false }).find(".details").slideUp(200);
-      $(".current").find(".details").slideDown(200);
+      }, { duration: 300, queue: false }).find(".details").slideUp(300);
+      $(".current").find(".details").slideDown(400);
+      
+      $(".tag-line").hide(10);
+      $(".tag-line:not(current)").show();
     });
 
     });
