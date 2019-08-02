@@ -35,7 +35,7 @@ html {
   max-width: 980px;
   margin: auto; 
   padding: percentage(22px/980px);
-  padding-top: 10%;
+  padding-top: 3%;
 }
 .projects {
   list-style: none;
